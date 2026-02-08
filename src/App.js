@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Header from './Components/Header';
@@ -9,11 +8,12 @@ import Login from './Components/Login';
 import Brands from './Components/Brands';
 import PhoneInfo from './Components/PhoneInfo';
 import ProductDetails from './Components/ProductDetails';
-import Error from './Components/Error';
 import { useState,useEffect } from 'react';
 import CartItems from './Components/CartItems';
 import phoneSpecs from './Components/PhoneData';
 import { ToastContainer,toast } from 'react-toastify';
+import Shipping from './Components/Shipping';
+import Payment from './Components/Payment';
 function App() {
   const [cartProduct,setCartProduct]=useState([]);
   const [allProducts, setAllProducts] = useState(phoneSpecs)||[];
@@ -63,7 +63,8 @@ function App() {
           <Route path='/:brand' element={<PhoneInfo/>}/>
           <Route path="/:brand/:model" element={<ProductDetails isLoggedIn={isLoggedIn} onAddToCart={addToCart}/>} />
           <Route path='/cart-items' element={<CartItems addedItems={cartProduct} setAddedItems={setCartProduct} quantity={handleChange}/>}/>
-          <Route path='*' element={<Error/>}/>
+          <Route path='/shipping' element={<Shipping addedItems={cartProduct}/>}/>
+          <Route path='/payment' element={<Payment addedItems={cartProduct} setAddedItems={setCartProduct}/>}/>
         </Routes>
         <Footer/>
         <ToastContainer style={{marginTop:'5rem',marginRight:'1rem'}} autoClose={2000} />
@@ -72,4 +73,4 @@ function App() {
   );
 }
 
- export default App;
+export default App;

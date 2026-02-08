@@ -11,22 +11,6 @@
     padding: 10px;
   }
 }
-.Toastify__toast--success,.Toastify__toast--error {
-  background-color: cadetblue !important;
-  color: white !important; /* this affects text + tick icon */
-}
-.Toastify__toast--success .Toastify__toast-icon svg {
-  fill: goldenrod !important;   /* tick mark color */
-}
-.Toastify__progress-bar--success {
-  background: goldenrod !important;   /* or cadetblue, or any other */
-}
-.Toastify__toast--error .Toastify__toast-icon svg {
-  fill: goldenrod !important;   /* tick mark color */
-}
-.Toastify__progress-bar--error {
-  background: goldenrod !important;   /* or cadetblue, or any other */
-}
 .navbar{
   background-color:cadetblue;
 }
@@ -35,7 +19,6 @@
 }
 .content{
     background-image: url('/public/images/background-image.jpg');
-    /* background-repeat: no-repeat; */
     width:100%;
     height: 700px;
     text-align: center;
@@ -136,41 +119,11 @@
   background-color: #e7a41e;
   transform: scale(1.01);
 }
-/* cart-items */
-/* .cart-container {
-  width: 90%;
-  margin: auto;
-  padding: 2rem;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-}
 
-.cart-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
-}
-
-.cart-table th, .cart-table td {
-  border: 1px solid #ccc;
-  padding: 0.75rem;
-  text-align: center;
-}
-
-.cart-img {
-  width: 60px;
-  height: auto;
-  border-radius: 4px;
-} */
-/*cart-items*/
 .cart_box img {
   width: '100%';
 }
 
-/* .cart_img {
-  display: flex;
-  width: 400px;
-} */
 .cart-img {
   width: 60px;
   height: auto;
@@ -249,4 +202,21 @@
   padding: 5px;
   text-align: center;
   font-size: larger;
+}
+
+.Toastify__toast--success,.Toastify__toast--error {
+  background-color: cadetblue !important;
+  color: white !important; 
+}
+.Toastify__toast--success .Toastify__toast-icon svg {
+  fill: goldenrod !important;   
+}
+.Toastify__progress-bar--success {
+  background: goldenrod !important;   
+}
+.Toastify__toast--error .Toastify__toast-icon svg {
+  fill: goldenrod !important;   
+}
+.Toastify__progress-bar--error {
+  background: goldenrod !important;   
 }

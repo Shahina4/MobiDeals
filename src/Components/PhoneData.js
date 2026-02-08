@@ -1,5 +1,5 @@
 const phoneSpecs = {
-            'apple':[
+  'apple':[
     {
       id:1,
       model: 'iPhone 16 Pro Max',
@@ -47,7 +47,7 @@ const phoneSpecs = {
     }
   ],
 
-    'samsung':[
+  'samsung':[
     {
       id:4,
       model: 'Galaxy S24 Ultra',
@@ -94,6 +94,7 @@ const phoneSpecs = {
       }
     }
   ],
+
   'xiaomi':[
     {
       id:7,
@@ -141,6 +142,7 @@ const phoneSpecs = {
       } 
     }
   ],
+
   'huawei':[
     {
       id:10,
@@ -188,6 +190,7 @@ const phoneSpecs = {
       }
     }
   ],
+
   'oneplus':[
     {
       id:13,
@@ -235,6 +238,7 @@ const phoneSpecs = {
       }
     }
   ],
+
   'realme':[
     {
       id:16,
@@ -282,6 +286,7 @@ const phoneSpecs = {
       }
     }
   ],
+
   'vivo':[
     {
       id:19,
@@ -329,6 +334,7 @@ const phoneSpecs = {
       }
     }
   ],
+
   'infinix':[
     {
       id:22,
@@ -376,6 +382,7 @@ const phoneSpecs = {
       }
     }
   ],
+
   'itel':[
     {
       id:25,
@@ -423,6 +430,7 @@ const phoneSpecs = {
       }
     }
   ],
+
   'oppo':[
     {
       id:28,

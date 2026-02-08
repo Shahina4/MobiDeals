@@ -7,7 +7,8 @@ const PhoneInfo = ()=>{
   return(
     <>
        <table style={{width:'100%',margin:'auto',alignItems:'center'}}>
-        <tr style={{display: 'flex', justifyContent:'space-around',flexWrap: 'wrap', padding: '20px',marginTop:'6rem'}}>
+        <tr style={{display: 'flex', justifyContent:'space-around',
+            flexWrap: 'wrap', padding: '20px',marginTop:'6rem'}}>
          {phones.map((phone) => (
           <ProductCard key={phone.id} brand={brand} phone={phone}/>
         ))}
